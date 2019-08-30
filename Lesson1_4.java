@@ -15,6 +15,7 @@ public class Lesson1_4 {
         array[indexMin] = temp;
 
         System.out.println("Результат 1_4: ");
+        System.out.println("    В массиве изменены  элементы с индексом " + indexMax + " и " + indexMin);
         for (float a: array) System.out.print(a + " ");
         System.out.println();
     }

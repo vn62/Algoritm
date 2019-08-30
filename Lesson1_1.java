@@ -8,6 +8,8 @@ class Lesson1_1 {
         }
         for (int a: array) System.out.print(a + "   ");
         System.out.println();
-        System.out.println("Результат 1_1: " + summ);
+        System.out.println("Результат 1_1: ");
+
+        System.out.println("    Сумма элементов кратных " + k + " равна " + summ);
     }
 }
