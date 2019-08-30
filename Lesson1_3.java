@@ -13,7 +13,7 @@ public class Lesson1_3 {
             else if(array[i] > 0) pol++;
             else neg++;
         }
-        System.out.println("Результат 1_3: ");
+        System.out.println("    Результат 1_3: ");
         System.out.println("    Количество нулей: " +  nul);
         System.out.println("    Количество положительных: " +  pol);
         System.out.println("    Количество отрицаткльных: " +  neg);

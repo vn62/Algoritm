@@ -9,7 +9,7 @@ public class Lesson1_2 {
                 summ++;
             }
         }
-        System.out.println("Результат 1_2: ");
+        System.out.println("    Результат 1_2: ");
         for (float a: array) System.out.print(a + " ");
         System.out.println();
         System.out.println("    Количество замен: " +  summ);

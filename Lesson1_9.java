@@ -30,7 +30,7 @@ public class Lesson1_9 {
             }
         }
 
-        System.out.println("Результат 1_9: ");
+        System.out.println("    Результат 1_9: ");
 
         if(isFind) System.out.println("    Минимальное из часто встречающихся чисел " + nextNumber
                 + " повторяется " + nextCountOfNumber + " раз(а)");

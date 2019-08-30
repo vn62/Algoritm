@@ -8,7 +8,7 @@ public class Lesson1_10 {
             else array[i] = 0;
         }
 
-        System.out.println("Результат 1_10: ");
+        System.out.println("    Результат 1_10: ");
         System.out.println("    Сжатый массив: ");
         for (int o: array) System.out.print(o + " ");
     }
