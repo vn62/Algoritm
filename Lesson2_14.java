@@ -4,16 +4,20 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Lesson2_14 {
+    public static void main(String[] args) {
+        new Lesson2_14();
+    }
+
     public Lesson2_14(){
         Scanner scan = new Scanner(System.in);
         int m = 0;
         int n = 0;
-        System.out.println("    Введите количество строк: ");
+        System.out.println("Введите количество строк: ");
         while (true) {
             m = scan.nextInt();
             if(m != 0) break;
         }
-        System.out.println("    Введите количество столбцов: ");
+        System.out.println("Введите количество столбцов: ");
         while (true) {
             n = scan.nextInt();
             if (n != 0) break;
@@ -27,7 +31,6 @@ public class Lesson2_14 {
 
         int count = 0;
 
-        System.out.println("    Результат 2_14: ");
         for (int i = 0; i < sizeCol; i++) {
             count = 0;
 
@@ -45,7 +48,7 @@ public class Lesson2_14 {
             }
         }
 
-        System.out.println("    Массив: ");
+        System.out.println("Массив случайных чисел, состоящий из 0 и 1: ");
         Algoritm.showArray(array);
         System.out.println();
     }

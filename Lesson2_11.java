@@ -3,6 +3,9 @@ package com.ex.Algoritmic_2;
 import java.util.Random;
 
 public class Lesson2_11 {
+    public static void main(String[] args) {
+        new Lesson2_11();
+    }
     public Lesson2_11(){
         int[][] array = new int[10][20];
         int sizeRow = array.length;
@@ -10,8 +13,7 @@ public class Lesson2_11 {
         Random rand = new Random();
 
         int count = 0;
-        System.out.println("    Результат 2_11: ");
-        System.out.println("    Строки которые содержит 3 и более раз число 5:");
+        System.out.println("Строки которые содержит 3 и более раз число 5:");
         for (int i = 0; i < sizeRow; i++) {
             count = 0;
             for (int j = 0; j < sizeCol; j++) {
@@ -22,7 +24,7 @@ public class Lesson2_11 {
             if(count > 2) System.out.println("Стр " + (i + 1) + " содержит " + count);
         }
 
-        System.out.println("    Массив: ");
+        System.out.println("Массив: ");
         Algoritm.showArray(array);
         System.out.println();
     }

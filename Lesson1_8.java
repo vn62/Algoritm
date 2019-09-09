@@ -1,11 +1,14 @@
 package com.ex.Algoritmic_2;
 
 public class Lesson1_8 {
+    public static void main(String[] args) {
+        int[] array = {2,10,1,5,1,6,3};
+        new Lesson1_8(array);
+    }
     public Lesson1_8(int[] array){
         int min = array[0];
         int numOfMin = 0;
 
-        System.out.println("Результат 1_8: ");
 
         for (int i = 0; i < array.length; i++) {
             if(array[i] < min) {
@@ -17,7 +20,7 @@ public class Lesson1_8 {
             if (array[i] == min) numOfMin++;
         }
 
-        System.out.println("    Минимальное число: " + min + " количество: " + numOfMin);
+        System.out.println("Минимальное число: " + min + " количество: " + numOfMin);
 
         int newSize = array.length - numOfMin;
         int[] newArray = new int[newSize];
@@ -28,8 +31,8 @@ public class Lesson1_8 {
                 index++;
             newArray[i] = array[index + i];
         }
-        //{2,10,1,5,1,6,3};
 
+        System.out.println("Новый массив не содержит: " + min);
         for (int i: newArray) System.out.print(i + " ");
         System.out.println();
     }

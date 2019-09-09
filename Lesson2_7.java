@@ -3,9 +3,13 @@ package com.ex.Algoritmic_2;
 import java.util.Scanner;
 
 public class Lesson2_7 {
+    public static void main(String[] args) {
+        new Lesson2_7();
+    }
+
     public Lesson2_7() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("    Введите размерность матрицы: ");
+        System.out.println("Введите размерность матрицы: ");
         int num = 0;
 
         while (scan.hasNextInt()) {
@@ -22,9 +26,9 @@ public class Lesson2_7 {
                 if(array[i][j] > 0) countPol++;
             }
         }
-        System.out.println("    Результат 2_7: ");
+        System.out.println("Квадратная матрица порядка " +  num + " : ");
         Algoritm.showArray(array);
-        System.out.println("    Положительных чисел " + countPol);
+        System.out.println("Содержит положительных элементов " + countPol);
         System.out.println();
     }
 }

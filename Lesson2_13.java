@@ -3,12 +3,16 @@ package com.ex.Algoritmic_2;
 import java.util.Random;
 
 public class Lesson2_13 {
+    public static void main(String[] args) {
+        new Lesson2_13(Algoritm.randArray(10,10,10));
+    }
+
     public Lesson2_13(int[][] array) {
         int sizeRow = array.length;
         int sizeCol = array[0].length;
 
-        System.out.println("    Результат 2_13: ");
-        System.out.println("    Столбцы отсортированы по возрастанию:");
+
+        System.out.println("Столбцы отсортированы по возрастанию:");
         for (int i = 0; i < sizeRow; i++) {
 
             for (int j = 0; j < sizeCol - 1; j++) {
@@ -23,7 +27,7 @@ public class Lesson2_13 {
         }
         Algoritm.showArray(array);
 
-        System.out.println("    Столбцы отсортированы по убыванию:");
+        System.out.println("Столбцы отсортированы по убыванию:");
         for (int i = 0; i < sizeRow; i++) {
 
             for (int j = 0; j < sizeCol - 1; j++) {

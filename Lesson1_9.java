@@ -1,6 +1,11 @@
 package com.ex.Algoritmic_2;
 
 public class Lesson1_9 {
+    public static void main(String[] args) {
+        int[] array5 = {1,2,3,4,5,6,7,8,9,10,12,12};
+        new Lesson1_9(array5);
+    }
+
     public Lesson1_9(int[] array) {
         int number = array[0];
         int nextNumber = array[0];
@@ -30,11 +35,8 @@ public class Lesson1_9 {
             }
         }
 
-        System.out.println("    Результат 1_9: ");
-
-        if(isFind) System.out.println("    Минимальное из часто встречающихся чисел " + nextNumber
+        if(isFind) System.out.println("Минимальное из часто встречающихся чисел " + nextNumber
                 + " повторяется " + nextCountOfNumber + " раз(а)");
-        else   System.out.println("    Числа не повторяются");
-
+        else   System.out.println("Числа не повторяются");
     }
 }
